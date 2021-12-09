@@ -17,10 +17,9 @@ default:
 }
 
 const initialStateRobots = {
-    isPending: false,
     robots: [],
-    error: ''
-}
+    isPending: true
+  }
 
 export const requestRobots = (state=initialStateRobots, action={}) =>
 {
