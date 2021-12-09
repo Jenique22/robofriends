@@ -7,7 +7,7 @@ const initialStateSearch= {
     searchFiled: ''
 }
 
-export const searchRobots = (state=initialState, action={})=> {
+export const searchRobots = (state=initialStateSearch, action={})=> {
     switch(action.type) {
 case CHANGE_SEARCH_FIELD:
 return Object.assign ({}, state, {searchField: action.payload});
